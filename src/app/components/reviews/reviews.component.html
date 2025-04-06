@@ -1,0 +1,20 @@
+<h2 class="section-title">O que nossos clientes dizem</h2>
+<div class="reviews-grid">
+  <mat-card class="review-card" *ngFor="let review of reviews">
+    <mat-card-header>
+      <div mat-card-avatar class="avatar">
+        <mat-icon>person</mat-icon>
+      </div>
+      <mat-card-title>{{ review.name }}</mat-card-title>
+      <mat-card-subtitle>{{ review.date | date:'longDate' }}</mat-card-subtitle>
+    </mat-card-header>
+
+    <mat-card-content>
+      <p>{{ review.comment }}</p>
+      <div class="rating">
+        <mat-icon *ngFor="let star of [1,2,3,4,5]">
+          {{ star <= review.rating ? 'star' : 'star_border' }} </mat-icon>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>

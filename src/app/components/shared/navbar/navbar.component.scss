@@ -1,0 +1,80 @@
+@use '@angular/material' as mat;
+
+mat-toolbar {
+  background-color: #795548;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  height: 3.5rem;
+}
+
+img {
+  border-radius: 50%;
+  border: 2px solid #D2B48C;
+  height: 40px;
+  margin-right: 16px;
+}
+
+span {
+  flex-grow: 1;
+}
+
+.example-spacer {
+  display: none;
+}
+
+div {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+a {
+  ::ng-deep .mat-button-wrapper {
+    padding: 0;
+  }
+
+  ::ng-deep .mat-button-focus-overlay {
+    display: none;
+  }
+}
+
+a .nav-link {
+  font-weight: 500;
+  color: white;
+  transition: color 0.3s ease;
+  padding: 0 8px;
+
+  &:hover {
+    color: #FF7043;
+  }
+}
+
+// Media query para telas menores
+@media (max-width: 768px) {
+  mat-toolbar {
+    flex-direction: column; // Empilha a logo, texto e links
+    align-items: center; // Centraliza os elementos
+    height: auto; // Ajusta a altura automaticamente
+    padding: 10px 0; // Adiciona padding para melhor espaçamento
+  }
+
+  img {
+    height: 30px;
+    margin-right: 0; // Remove a margem da logo
+    margin-bottom: 5px; // Adiciona margem inferior para separar a logo do texto
+  }
+
+  span {
+    font-size: 0.9em;
+    margin-bottom: 10px; // Adiciona margem inferior para separar o texto dos links
+  }
+
+  div {
+    justify-content: center; // Centraliza os links
+  }
+
+  a .nav-link {
+    font-size: 0.9em;
+  }
+}

@@ -1,1 +1,12 @@
-<p>navbar works!</p>
+<mat-toolbar>
+  <img mat-icon-button src="assets/images/tia-rose-logo-hd.png" alt="Logo Tia Rosa"
+    style="height: 40px; margin-right: 16px;">
+  <span>Coffee shop Tia Rosa</span>
+  <span class="example-spacer"></span>
+  <div style="display: flex; justify-content: flex-end;">
+    <a mat-button (click)="goToHome()"><span class="nav-link">Home</span></a>
+    <a mat-button routerLink="/produtos" routerLinkActive="active"><span class="nav-link">Produtos</span></a>
+    <a mat-button routerLink="/contato" routerLinkActive="active"><span class="nav-link">Contato</span></a>
+    <a mat-button routerLink="/reviews" routerLinkActive="active"><span class="nav-link">Reviews</span></a>
+  </div>
+</mat-toolbar>

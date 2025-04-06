@@ -1,0 +1,106 @@
+:host {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; // centraliza o conteúdo verticalmente
+  align-items: center;
+  width: 100%;
+  min-height: 100vh; // altura mínima para ocupar toda a tela
+  max-height: 100vh; // evita que passe da altura da tela
+  padding: 60px 0;
+  overflow: hidden;
+
+  background-image: url('/assets/images/Coffe-shop (5).jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+  }
+}
+
+
+// Conteúdo acima da película
+.section-title,
+.reviews-grid {
+  position: relative;
+  z-index: 1;
+}
+
+.section-title {
+  text-align: center;
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  padding: 20px;
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
+  justify-content: center;
+}
+
+
+.review-card {
+  width: 100%;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+  }
+
+  .avatar {
+    background-color: #FF7043;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+
+  mat-card-title {
+    font-weight: 600;
+  }
+
+  mat-card-subtitle {
+    font-size: 0.875rem;
+    color: #666;
+  }
+
+  .rating {
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+
+    mat-icon {
+      color: #FFD700;
+    }
+  }
+
+  mat-card-content {
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .reviews-grid {
+    padding: 10px;
+  }
+}
