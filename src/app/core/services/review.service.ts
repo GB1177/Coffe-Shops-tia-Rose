@@ -20,12 +20,6 @@ export class ReviewService {
         date: '2024-04-02',
       },
       {
-        name: 'Julia Lima',
-        comment: 'Bom café, mas achei um pouco caro.',
-        rating: 4,
-        date: '2024-03-28',
-      },
-      {
         name: 'Carla Maria',
         comment: 'Atedimento muito bom! Café excelente!',
         rating: 5,
