@@ -1,27 +1,39 @@
-# CoffeeshopTiaRosa
+☕ Coffee Shop Tia Rosa
+Um site desenvolvido com Angular 17 para representar a cafeteria fictícia "Tia Rosa". O objetivo é oferecer uma interface intuitiva e moderna para apresentar a marca, seus produtos e serviços aos clientes.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.12.
+📌 Projeto desenvolvido como parte da verificação de aprendizagem da disciplina de Desenvolvimento Web.
 
-## Development server
+🔗 Acesse o site
+🌐 Clique aqui para acessar o site: https://coffe-shop-tia-rose.netlify.app/
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+🛠 Tecnologias utilizadas
+Angular 17
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Angular Material
 
-## Build
+SCSS
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+TypeScript
 
-## Running unit tests
+Netlify (para deploy)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Node.js (versão 20+)
 
-## Running end-to-end tests
+🚀 Como rodar localmente
+Certifique-se de ter o Node.js v20+ e Angular CLI instalados.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+# Clone o repositório
+git clone https://github.com/seu-usuario/coffee-shop-tia-rosa.git
 
-## Further help
+# Acesse a pasta do projeto
+cd coffee-shop-tia-rosa
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+# Instale as dependências
+npm install
+
+# Inicie o servidor local
+ng serve
+
+Abra o navegador em http://localhost:4200.
+
